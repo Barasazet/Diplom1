@@ -22,6 +22,7 @@ public class MoveIngredientNegativeTest {
     private List<Ingredient> expected;
     private List<Ingredient> actual;
 
+
     @Before
     public void setUp() {
         burger = new Burger();

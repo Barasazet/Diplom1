@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
 
+
 public class AddIngredientTest {
     private Burger burger;
     private Ingredient sauce;

@@ -9,6 +9,7 @@ import praktikum.Ingredient;
 
 import static org.junit.Assert.*;
 
+
 public class GetPriceTest {
     private float actual;
     private float expected;

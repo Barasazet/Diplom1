@@ -51,6 +51,7 @@ public class RemoveIngredientTest {
         }
     }
 
+
     @Test
     public void cantRemoveFromEmptyList() {
         try {

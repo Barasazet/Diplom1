@@ -15,6 +15,7 @@ import static org.junit.Assert.assertEquals;
 import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
 
+
 @RunWith(Parameterized.class)
 public class GetReceiptTest {
     private Burger burger;

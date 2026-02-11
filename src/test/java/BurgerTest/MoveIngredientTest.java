@@ -50,6 +50,7 @@ public class MoveIngredientTest {
         };
     }
 
+
     @Before
     public void setUp() {
         burger = new Burger();
