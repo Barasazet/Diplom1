@@ -1,4 +1,4 @@
-package BurgerTest;
+package burger.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -33,7 +33,7 @@ public class RemoveIngredientTest {
     }
 
     @Test
-    public void shouldRemoveCorrectIngredient() {
+    public void shouldRemoveCorrectIngredientTest() {
         burger.addIngredient(beef);
         burger.addIngredient(sauce);
         index = burger.ingredients.indexOf(sauce);
@@ -43,7 +43,7 @@ public class RemoveIngredientTest {
     }
 
     @Test
-    public void cantRemoveIngredientWithInvalidIndex() {
+    public void cantRemoveIngredientWithInvalidIndexTest() {
         try {
             burger.removeIngredient(3);
         } catch (IndexOutOfBoundsException e) {
@@ -53,7 +53,7 @@ public class RemoveIngredientTest {
 
 
     @Test
-    public void cantRemoveFromEmptyList() {
+    public void cantRemoveFromEmptyListTest() {
         try {
             burger.removeIngredient(0);
         } catch (IndexOutOfBoundsException e) {

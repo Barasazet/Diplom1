@@ -1,4 +1,4 @@
-package BurgerTest;
+package burger.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -33,7 +33,7 @@ public class MoveIngredientNegativeTest {
     }
 
     @Test
-    public void cantMoveInEmptyList() {
+    public void cantMoveInEmptyListTest() {
         try {
             burger.moveIngredient(0, 0);
             fail("Expected IndexOutOfBoundsException");
@@ -43,7 +43,7 @@ public class MoveIngredientNegativeTest {
     }
 
     @Test
-    public void cantMoveToInvalidIndex() {
+    public void cantMoveToInvalidIndexTest() {
         try {
             burger.addIngredient(cheese);
             burger.addIngredient(beef);
@@ -56,7 +56,7 @@ public class MoveIngredientNegativeTest {
     }
 
     @Test
-    public void cantMoveFromInvalidIndex() {
+    public void cantMoveFromInvalidIndexTest() {
         try {
             burger.addIngredient(cheese);
             burger.addIngredient(beef);

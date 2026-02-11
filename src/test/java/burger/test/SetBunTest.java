@@ -1,4 +1,4 @@
-package BurgerTest;
+package burger.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,7 +27,7 @@ public class SetBunTest {
     }
 
     @Test
-    public void setBunsShouldReplacePreviousBuns() {
+    public void setBunsShouldReplacePreviousBunsTest() {
         burger.setBuns(bun1);
         burger.setBuns(bun2);
         assertEquals(bun2, burger.bun);

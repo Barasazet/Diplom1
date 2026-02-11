@@ -1,4 +1,4 @@
-package BurgerTest;
+package burger.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -31,7 +31,7 @@ public class GetPriceTest {
     }
 
     @Test
-    public void shouldGetPriceWithBunsAndTwoIngredients() {
+    public void shouldGetPriceWithBunsAndTwoIngredientsTest() {
         burger.setBuns(bun);
         burger.addIngredient(sauce);
         burger.addIngredient(beef);
@@ -43,7 +43,7 @@ public class GetPriceTest {
     }
 
     @Test
-    public void shouldGetPriceWithBunsAndOneIngredient() {
+    public void shouldGetPriceWithBunsAndOneIngredientTest() {
         burger.setBuns(bun);
         burger.addIngredient(sauce);
 
@@ -54,7 +54,7 @@ public class GetPriceTest {
     }
 
     @Test
-    public void shouldGetPriceWithBunsAndWithoutIngredients() {
+    public void shouldGetPriceWithBunsAndWithoutIngredientsTest() {
         burger.setBuns(bun);
 
         expected = 100F;
@@ -64,7 +64,7 @@ public class GetPriceTest {
     }
 
     @Test
-    public void cantGetPriceWithoutBuns() {
+    public void cantGetPriceWithoutBunsTest() {
         try {
             burger.getPrice();
             fail("Expected NPE");

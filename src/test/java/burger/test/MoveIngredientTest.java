@@ -1,4 +1,4 @@
-package BurgerTest;
+package burger.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -57,7 +57,7 @@ public class MoveIngredientTest {
     }
 
     @Test
-    public void shouldMoveIngredientsCorrectly() {
+    public void shouldMoveIngredientsCorrectlyTest() {
         for (Ingredient ingredient : initialIngredients) {
             burger.addIngredient(ingredient);
         }

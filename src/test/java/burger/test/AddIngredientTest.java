@@ -1,7 +1,8 @@
-package BurgerTest;
+package burger.test;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 import praktikum.Burger;
 import praktikum.Ingredient;
 
@@ -12,22 +13,22 @@ import static praktikum.IngredientType.SAUCE;
 
 public class AddIngredientTest {
     private Burger burger;
-    private Ingredient sauce;
-    private Ingredient cheese;
+    private Ingredient sauceMock;
+    private Ingredient cheeseMock;
     int expected;
     int actual;
 
     @Before
     public void setUp() {
-        sauce = new Ingredient(SAUCE, "sauce", 10);
-        cheese = new Ingredient(FILLING, "cheese", 10);
+        sauceMock = Mockito.mock(Ingredient.class);
+        cheeseMock = Mockito.mock(Ingredient.class);
         burger = new Burger();
 
     }
 
     @Test
-    public void shouldAddOneIngredient() {
-        burger.addIngredient(sauce);
+    public void shouldAddOneIngredientTest() {
+        burger.addIngredient(sauceMock);
 
         expected = 1;
         actual = burger.ingredients.size();
@@ -36,9 +37,9 @@ public class AddIngredientTest {
     }
 
     @Test
-    public void shouldAddTwoIngredients() {
-        burger.addIngredient(sauce);
-        burger.addIngredient(cheese);
+    public void shouldAddTwoIngredientsTest() {
+        burger.addIngredient(sauceMock);
+        burger.addIngredient(cheeseMock);
         expected = 2;
         actual = burger.ingredients.size();
 
