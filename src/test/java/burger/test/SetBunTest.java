@@ -8,29 +8,29 @@ import praktikum.Burger;
 import static org.junit.Assert.assertEquals;
 
 public class SetBunTest {
-    private Bun bun1;
-    private Bun bun2;
+    private Bun firstBun;
+    private Bun newBun;
     private Burger burger;
 
     @Before
     public void setUp() {
         burger = new Burger();
-        bun1 = new Bun("cosmoBun", 3);
-        bun2 = new Bun("moonBun", 3);
+        firstBun = new Bun("cosmoBun", 3);
+        newBun = new Bun("moonBun", 3);
     }
 
     @Test
     public void settingBunTest() {
-        burger.setBuns(bun1);
+        burger.setBuns(firstBun);
 
-        assertEquals(bun1, burger.bun);
+        assertEquals(firstBun, burger.bun);
     }
 
     @Test
     public void setBunsShouldReplacePreviousBunsTest() {
-        burger.setBuns(bun1);
-        burger.setBuns(bun2);
-        assertEquals(bun2, burger.bun);
+        burger.setBuns(firstBun);
+        burger.setBuns(newBun);
+        assertEquals(newBun, burger.bun);
 
     }
 }
